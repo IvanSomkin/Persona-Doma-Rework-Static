@@ -4,9 +4,9 @@ window.addEventListener('scroll', function() {
 
     if (scrollY > innerHeight) {
 
-      if (header.classList.contains("initial-header")) {
+      if (header.classList.contains("header_initial")) {
 
-        header.classList.remove("initial-header");
+        header.classList.remove("header_initial");
         
         var y = -80
         header.style.top = "-80px"
@@ -25,9 +25,9 @@ window.addEventListener('scroll', function() {
 
     }
     
-    if (scrollY <= 0) {
+    if (scrollY <= 0 && header.classList.contains("header_absolute")) {
       header.classList.remove("sticky-header");
-      header.classList.add("initial-header");
+      header.classList.add("header_initial");
     }
 
   });
