@@ -37,6 +37,9 @@ h3 {
 }
 
 .strip {
+    display: flex;
+    flex-direction: row;
+
     width: 100%;
     min-height: 80px;
     background-color: rgb(43, 27, 28);
@@ -44,8 +47,9 @@ h3 {
 
 .image-half {
     flex-grow: 1;
-    flex-basis: 0;
 }
+
+
 
 .text-half {
     flex-grow: 1;
@@ -69,10 +73,6 @@ h3 {
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
     height: 40px;
     background-color: rgb(95, 32, 39);
 }
@@ -84,12 +84,6 @@ h3 {
 
 .sticky-header {
     position: fixed; 
-}
-
-@media screen and (max-width: 800px) {
-    #header {
-      visibility: hidden;
-    }
 }
 
 #header-logo {
@@ -190,10 +184,7 @@ h3 {
 }
 
 #about-us-home {
-    display: flex;
-    flex-direction: row;
     flex-basis: fit-content;
-
     height: 600px;
 }
 
@@ -201,4 +192,16 @@ h3 {
     background-image: url(../assets/about-us.jpg);
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+      visibility: hidden;
+    }
+    .strip {
+        flex-direction: column;
+    }
+    .image-half {
+        min-height: 100vw;
+    }
 }
