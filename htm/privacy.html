@@ -7,47 +7,15 @@
     <meta name="Keywords" content="Персона дома, агентство домашнего персонала Персона дома, персона дома агентство, Няня для ребенка, няня для ребенка в Спб, требуется няня, кадровое агентство няня, няня агентство домашнего персонала, агентство домашнего персонала, Домработница, Домработница Санкт-Петербург, Домработница Спб, личный водитель, личный водитель Спб, семейный водитель Спб, персональный водитель Спб, персональный водитель, семейный водитель, семейная пара, семейная пара в загородный дом, требуется семейная пара, работник для загородного дома, помощник по хозяйству, помощница по хозяйству, помощник по хозяйству с проживанием, требуется помощник по хозяйству, Услуги психолога, психолог спб, гувернантка, гувернантка Спб, гувернантка Санкт­Петербург, домашний повар, семейный повар, домашний повар СПб, семейный повар СПб, требуется домашний повар, требуется семейный повар">
     <meta name="author" content="Ivan Somkin" />
     <meta name="description" content="Домашний персонал от агентства «Персона Дома». Няня, домработница, водитель, семейная пара, помощница, работник по дому, психолог.">
-    <link href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/css/style.css" rel="stylesheet" />
-    <script src="https://ivansomkin.github.io/Persona-Doma-Rework-Static/javascript/sticky-header.js"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/javascript/get-load-time.js"></script>
     <title>Конфиденциальность - Персона Дома</title>
   </head>
 
   <body>
 
-    <div class="strip header header_initial">
-      <div class="header__logo">
-        <a href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/index.html">
-          <img class="header__logo__image" src="https://ivansomkin.github.io/Persona-Doma-Rework-Static/assets/logo/logo.png"/>
-        </a>
-      </div>
-      <div class="header__items">
-        <div class="header__item header__item_current" id="home-header-item">
-          <a class="a_button a_clear" href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/index.html">
-            <h3>ГЛАВНАЯ</h3>
-          </a>
-        </div>
-        <div class="header__item" id="about-us-header-item">
-          <a class="a_button a_clear" href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/htm/about-us.html">
-            <h3>О НАС</h3>
-          </a>
-        </div>
-        <div class="header__item" id="for-employers-header-item">
-          <a class="a_button a_clear" href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/htm/for-employers.html">
-            <h3>РАБОТОДАТЕЛЯМ</h3>
-          </a>
-        </div>
-        <div class="header__item" id="for-candidates-header-item">
-          <a class="a_button a_clear" href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/htm/for-candidates.html">
-            <h3>СОИСКАТЕЛЯМ</h3>
-          </a>
-        </div>
-        <div class="header__item" id="contacts-header-item">
-          <a class="a_button a_clear" href="https://ivansomkin.github.io/Persona-Doma-Rework-Static/htm/contacts.html">
-            <h3>КОНТАКТЫ</h3>
-          </a>
-        </div>
-      </div>   
-    </div>
+    <div id="header-include"></div>
 
     <div class="strip" id="privacy">
       <article id="privacy-article">
@@ -59,17 +27,12 @@
       </article>
     </div>
 
-  </body>
+    <div id="footer-include"></div>
 
-  <footer>
-    <div id="footer-logo">
-      <img src="https://ivansomkin.github.io/Persona-Doma-Rework-Static/assets/logo/logo.png"/>
-    </div>
-    <div id="privacy-link">
-      <h3>
-        <a class="a_clear" href=https://ivansomkin.github.io/Persona-Doma-Rework-Static/htm/privacy.html>КОНФИДЕНЦИАЛЬНОСТЬ</a>
-      </h3>
-    </div>
-  </footer>
+    <script src="/javascript/load-components.js"></script>
+    <script src="/javascript/sticky-header.js"></script>
+    <script src="/javascript/current-page.js"></script>
+    
+  </body>
 
 </html>

@@ -1,12 +1,10 @@
 window.addEventListener('scroll', function() {
 
-    var header = document.getElementsByClassName("header")[0];
+    var header = document.getElementsByTagName("header")[0];
 
     if (scrollY > innerHeight) {
 
-      if (header.classList.contains("header_initial")) {
-
-        header.classList.remove("header_initial")
+      if (!header.classList.contains("sticky-header")) {
     
         var y = -header.getBoundingClientRect().height;
         header.style.top = y + "px";
@@ -26,9 +24,8 @@ window.addEventListener('scroll', function() {
 
     }
     
-    if (scrollY <= 0 && header.classList.contains("header_absolute")) {
+    if (scrollY <= 0) {
       header.classList.remove("sticky-header");
-      header.classList.add("header_initial");
     }
 
   });
