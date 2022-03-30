@@ -8,23 +8,101 @@
     <meta name="author" content="Ivan Somkin" />
     <meta name="description" content="Домашний персонал от агентства «Персона Дома». Няня, домработница, водитель, семейная пара, помощница, работник по дому, психолог.">
     <link href="/Persona-Doma-Rework-Static/css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/jquery-3.6.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.min.js"></script>
     <script src="/Persona-Doma-Rework-Static/javascript/get-load-time.js"></script>
     <title>Соискателям - Персона Дома</title>
   </head>
 
   <body>
 
-    <div id="header-include"></div>
+    <nav id="mobile-menu"></nav>
 
-    <div class="strip" style="height: 2000px;">
+    <main id="panel">
+
+      <div id="header-container" class="relative-header"></div>
+    
+    <div class="strip strip-column strip-column-padding-gaps">
+      <div class="red-background">
+        <form id="candidate-form">
+          <div class="form-header">
+            <h3>Анкета соискателям</h3>
+            <p><i>Для семейной пары всю информацию необходимо заполнять через "/Persona-Doma-Rework-Static/"</i></p>
+            <p><i>Пример: Ф.И.О. Иванов Иван Иванович/Иванова Мария Ивановна</i></p>
+          </div>
+          <div class="form-question">
+            <p>На какую вакансию претендуете:</p>
+            <select class="input-line" name="Вакансия" required="">
+              <option value="Домработница">Домработница</option>
+              <option value="Няня">Няня</option>
+              <option value="Помощница по дому">Помощница по дому</option>
+              <option value="Психолог">Психолог</option>
+              <option value="Работник по дому">Помощница по дому</option>
+              <option value="Семейная пара">Семейная пара</option>
+              <option value="Водитель">Водитель</option>
+            </select>
+          </div>
+          <div class="form-question">
+            <p>Фамилия Имя Отчество:</p>
+            <input class="input-line" name="ФИО" required="" type="text" placeholder="Иванова Мария Ивановна">
+          </div>
+          <div class="form-question">
+            <p>Дата рождения:</p>
+            <input class="input-line" name="День рождения" required="" type="text" placeholder="01.01.2000">
+          </div>
+          <div class="form-question">
+            <p>Гражданство:</p>
+            <input class="input-line" name="Гражданство" required="" type="text" placeholder="Российская Федерация">
+          </div>
+          <div class="form-question">
+            <p>Прописка по паспорту:</p>
+            <input class="input-line" name="Прописка по паспорту" required="" type="text" placeholder="Санкт-Петербург, Невский проспект, 1">
+          </div>
+          <div class="form-question">
+            <p>Фактический адрес проживания и ближайшая станция метро:</p>
+            <input class="input-line" name="Фактический адрес проживания и ближайшая станция метро" required="" type="text" placeholder="Санкт-Петербург, Невский проспект, 1 - Адмиралтейская">
+          </div>
+          <div class="form-question">
+            <p>Ваш контактный телефон:</p>
+            <input class="input-line" name="Контактный телефон" required="" type="text" placeholder="+7 (921) 111-11-11">
+          </div>
+          <div class="form-question">
+            <p>Ваш E-mail:</p>
+            <input class="input-line" name="E-mail" required="" type="text" placeholder="ivanova.maria@email.ru">
+          </div>
+          <div class="form-question">
+            <p>Образование:</p>
+            <input class="input-line" name="Образование" required="" type="text" placeholder="бакалавриат">
+          </div>
+          <div class="form-question">
+            <p>Учебное заведение и год окончания:</p>
+            <input class="input-line" name="Учебное заведение и год окончания" required="" type="text" placeholder="СПбГУ, 2015">
+          </div>
+          <div class="form-question">
+            <p>Специальность:</p>
+            <input class="input-line" name="Специальность" required="" type="text" placeholder="Журналистика">
+          </div>
+          <div class="form-button">
+            <div class="button-container">
+              <a class="a-button separate-button yellow-background" onclick="updateResult()">УТВЕРДИТЬ</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="form-result"></div>
     </div>
 
-    <div id="footer-include"></div>
+    <div id="footer-container"></div>
 
-    <script src="/Persona-Doma-Rework-Static/javascript/load-components.js"></script>
+    </main>
+
+
+    <script src="/Persona-Doma-Rework-Static/javascript/load-components.js"></script> 
     <script src="/Persona-Doma-Rework-Static/javascript/sticky-header.js"></script>
-    <script src="/Persona-Doma-Rework-Static/javascript/current-page.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-desktop.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-mobile.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/candidate-form.js"></script>
 
   </body>
 

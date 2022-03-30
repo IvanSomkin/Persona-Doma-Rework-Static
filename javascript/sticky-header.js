@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function() {
 
-    var header = document.getElementsByTagName("header")[0];
+    var header = document.getElementById("header-container");
 
-    if (scrollY > innerHeight) {
+    if (scrollY > innerHeight & header != "undefined") {
 
       if (!header.classList.contains("sticky-header")) {
     

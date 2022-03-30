@@ -8,278 +8,351 @@
     <meta name="author" content="Ivan Somkin" />
     <meta name="description" content="Домашний персонал от агентства «Персона Дома». Няня, домработница, водитель, семейная пара, помощница, работник по дому, психолог.">
     <link href="/Persona-Doma-Rework-Static/css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/jquery-3.6.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.min.js"></script>
     <script src="/Persona-Doma-Rework-Static/javascript/get-load-time.js"></script>
-    <style>
-      header {
-        position: absolute;
-      }
-    </style>
     <title>Главная - Персона Дома</title>
   </head>
 
   <body>
-    
-    <div id="header-include"></div>
-    
-    <div class="strip" id="greeting">
-      <div id="title-card">
-        <div id="title-card__box">
-          <div id="title-card__box__text">
-            <h1>ПЕРСОНА ДОМА</h1>
-            <h3>АГЕНТСТВО ДОМАШНЕГО ПЕРСОНАЛА</h3>
-          </div>
-        </div>
-      </div>
-    </div>
 
+    <nav id="mobile-menu"></nav>
 
-    <div class="strip strip_header" id="for-employers-home-header">
-      <h2>РАБОТОДАТЕЛЯМ</h2>
-    </div>
-    <div class="strip" id="for-employers-home">
-      <div class="service-column">
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_maid">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Домработница</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_babysitter">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Няня</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_assistant">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Помощница</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_psychologist"> 
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Психолог</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_domestic-worker">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Работник по дому</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_family-couple">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Семейная пара</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-block">
-          <div class="image-third" id="service-block__image_driver">
-          </div>
-          <div class="text-two-third box-text">
-            <h2>Водитель</h2>
-            <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
-            <p><strong>Основные: </strong></p>
-            <ul>
-              <li>сухая и влажная уборка всех помещений в доме или квартире</li>
-              <li>мытье и уход за всеми поверхностями</li>
-              <li>мойка окон текущая и сезонная</li>
-              <li>стирка и глажение общего белья, перестилка постелей</li>
-              <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
-              <li>сезонная консервация одежды</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <main id="panel">
 
+      <div id="header-container" class="absolute-header"></div>
 
-    <div class="strip strip_header" id="about-us-home-header">
-      <h2>О НАС</h2>
-    </div>
-    <div class="strip" id="about-us-home">
-      <div class="image-half" id="about-us-home__image">
-      </div>
-      <div class="text-half">
-        <div class="box-text">
-          <h2>
-            <strong>Агенство «Персона Дома»</strong> занимается подбором домашнего персонала для вас и вашего дома:
-          </h2>
-          <ul>
-            <li>От няни к новорожденному до гувернантки</li>
-            <li>Персональный или семейный водитель</li>
-            <li>Семейная пара для обслуживания загородного дома</li>
-            <li>Домработница для уборки квартиры</li>
-            <li>Помощница по хозяйству с проживанием</li>
-            <li>Работник для загородного дома</li>
-            <li>Семейный повар, а также сиделка-компаньон</li>
-          </ul>
-          <p>
-            <em>Мы стремимся к тому, чтобы поиск и подбор домашнего персонала не составлял для Вас больших хлопот, поэтому мы делаем это так, как удобно Вам и следуем Вашим пожеланиям.</em>
-          </p>
-          <div class="button-line"> 
-            <div class="know-more-button">
-              <a class="a_button" href="/Persona-Doma-Rework-Static/htm/about-us.html">
-                <h3>ПОДРОБНЕЕ...</h3>
-              </a>
+      <div id="title-card" class="strip">
+        <div id="title-card-image">
+          <div id="title-card-overlay">
+            <div id="title-card-text">
+              <h1>ПЕРСОНА ДОМА</h1>
+              <h4>АГЕНТСТВО ДОМАШНЕГО ПЕРСОНАЛА</h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="strip strip_header" id="for-candidates-home-header">
-      <h2>СОИСКАТЕЛЯМ</h2>
-    </div>
-    <div class="strip" id="for-candidates-home">
-      <div class="pay-grid">
-        <div>
-          Вакансия
+      <div class="strip strip-header">
+        <h2>РАБОТОДАТЕЛЯМ</h2>
+      </div>
+
+      <div class="strip strip-column strip-column-padding-gaps">
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_maid"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Домработница</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Часов в неделю
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_babysitter"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Няня</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Зарплата в месяц
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_assistant"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Помощница</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Домработница
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_psychologist"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Психолог</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          40
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_domestic-worker"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Работник по дому</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          30,000 руб.
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_family-couple"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Семейная пара</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          Няня
-        </div>
-        <div>
-          48
-        </div>
-        <div>
-          35,000 руб.
-        </div>
-        <div>
-          Помощница
-        </div>
-        <div>
-          36
-        </div>
-        <div>
-          28,000 руб.
-        </div>
-        <div>
-          Психолог
-        </div>
-        <div>
-          36
-        </div>
-        <div>
-          40,000 руб.
-        </div>
-        <div>
-          Работник по дому
-        </div>
-        <div>
-          36
-        </div>
-        <div>
-          25,000 руб.
-        </div>
-        <div>
-          Семейная пара
-        </div>
-        <div>
-          36
-        </div>
-        <div>
-          60,000 руб.
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background horizontal-image" id="image_driver"></div>
+          </div>
+          <div class="block-wide">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h2>Водитель</h2>
+                <p><strong>Домработница</strong>– это специалист в сфере домашнего сервиса, в круг обязанностей которого могут входить следующие виды работ:</p>
+                <p><strong>Основные: </strong></p>
+                <ul>
+                  <li>сухая и влажная уборка всех помещений в доме или квартире</li>
+                  <li>мытье и уход за всеми поверхностями</li>
+                  <li>мойка окон текущая и сезонная</li>
+                  <li>стирка и глажение общего белья, перестилка постелей</li>
+                  <li>уход за гардеробом и обувью, сдача белья в химчистку</li>
+                  <li>сезонная консервация одежды</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="strip strip_header" id="contacts-home-header">
-      <h2>КОНТАКТЫ</h2>
-    </div>
-    <div class="strip" id="contacts-home">
-    </div>
+      <div class="strip strip-header">
+        <h2>О НАС</h2>
+      </div>
 
-    <div id="footer-include"></div>
+      <div class="strip">
+        <div class="block-row">
+          <div class="block">
+            <div class="image-background square-image" id="image_about-us-home"></div>
+          </div>
+          <div class="block">
+            <div class="yellow-background">
+              <div class="text-in-block">
+                <h2>
+                  <strong>Агенство «Персона Дома»</strong> занимается подбором домашнего персонала для вас и вашего дома:
+                </h2>
+                <ul>
+                  <li>От няни к новорожденному до гувернантки</li>
+                  <li>Персональный или семейный водитель</li>
+                  <li>Семейная пара для обслуживания загородного дома</li>
+                  <li>Домработница для уборки квартиры</li>
+                  <li>Помощница по хозяйству с проживанием</li>
+                  <li>Работник для загородного дома</li>
+                  <li>Семейный повар, а также сиделка-компаньон</li>
+                </ul>
+                <p>
+                  <em>Мы стремимся к тому, чтобы поиск и подбор домашнего персонала не составлял для Вас больших хлопот, поэтому мы делаем это так, как удобно Вам и следуем Вашим пожеланиям.</em>
+                </p> 
+                <div class="button-container">
+                  <a class="a-button separate-button" href="/Persona-Doma-Rework-Static/htm/about-us.html">
+                    <h4>ПОДРОБНЕЕ...</h4>
+                  </a>
+                </div>
+              </div> 
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="strip strip-header">
+        <h2>СОИСКАТЕЛЯМ</h2>
+      </div>
+
+      <div class="strip strip-column strip-column-padding-gaps">
+        <div>
+          <div class="pay-grid">
+            <div>
+              Вакансия
+            </div>
+            <div>
+              Часов в неделю
+            </div>
+            <div>
+              Зарплата в месяц
+            </div>
+            <div>
+              Домработница
+            </div>
+            <div>
+              40
+            </div>
+            <div>
+              30,000 руб.
+            </div>
+            <div>
+              Няня
+            </div>
+            <div>
+              48
+            </div>
+            <div>
+              35,000 руб.
+            </div>
+            <div>
+              Помощница
+            </div>
+            <div>
+              36
+            </div>
+            <div>
+              28,000 руб.
+            </div>
+            <div>
+              Психолог
+            </div>
+            <div>
+              36
+            </div>
+            <div>
+              40,000 руб.
+            </div>
+            <div>
+              Работник по дому
+            </div>
+            <div>
+              36
+            </div>
+            <div>
+              25,000 руб.
+            </div>
+            <div>
+              Семейная пара
+            </div>
+            <div>
+              36
+            </div>
+            <div>
+              60,000 руб.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="button-container">
+            <a class="separate-button a-button" href="/Persona-Doma-Rework-Static/htm/for-candidates.html">
+              <h4>ЗАПОЛНИТЬ АНКЕТУ</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="strip strip-header">
+        <h2>КОНТАКТЫ</h2>
+      </div>
+
+      <div class="strip strip-column strip-column-padding">
+        <div class="block">
+          <div class="red-background">
+            <div class="text-in-block text-center text-tall">
+              <h3>Телефон: +7 (953) 356-98-36</h3>
+              <h3>Адрес: ул. 2-я Советская, дом 15, офис 225</h3>
+              <h3>Санкт-Петербург, Россия</h3>
+            </div>
+          </div>
+        </div>
+        <div class="block">
+          <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7fcc3b524a344653397eb541119d1b4f8e58ad737424c1f180603f4b665b4b5f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe> -->
+        </div>
+        <div class="block">
+          <div class="red-background">
+            <div class="text-in-block text-center">
+              <h3>МЫ ВСЕГДА РАДЫ ВАС ВИДЕТЬ!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-container"></div>
+
+    </main>
+
 
     <script src="/Persona-Doma-Rework-Static/javascript/load-components.js"></script>  
     <script src="/Persona-Doma-Rework-Static/javascript/sticky-header.js"></script>
-    <script src="/Persona-Doma-Rework-Static/javascript/current-page.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-desktop.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-mobile.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.js"></script>
 
   </body>  
 

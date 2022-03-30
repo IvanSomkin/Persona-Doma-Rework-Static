@@ -8,23 +8,46 @@
     <meta name="author" content="Ivan Somkin" />
     <meta name="description" content="Домашний персонал от агентства «Персона Дома». Няня, домработница, водитель, семейная пара, помощница, работник по дому, психолог.">
     <link href="/Persona-Doma-Rework-Static/css/style.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/jquery-3.6.0.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.min.js"></script>
     <script src="/Persona-Doma-Rework-Static/javascript/get-load-time.js"></script>
     <title>О нас - Персона Дома</title>
   </head>
 
   <body>
 
-    <div id="header-include"></div>
+    <nav id="mobile-menu"></nav>
+    
+    <main id="panel">
 
-    <div class="strip" style="height: 2000px;">
-    </div>
+      <div id="header-container" class="relative-header"></div>
 
-    <div id="footer-include"></div>
+      <div>
+        <div id="reviews" class="strip strip-column strip-column-padding-gaps">
+          <div class="block">
+            <div class="red-background">
+              <div class="text-in-block">
+                <h3>ОТЗЫВЫ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="preloader-container-left">
+            <div class="preloader"></div>
+          </div>
+        </div>
+      </div>
 
-    <script src="/Persona-Doma-Rework-Static/javascript/load-components.js"></script>
+      <div id="footer-container"></div>
+
+    </main>
+
+
+    <script src="/Persona-Doma-Rework-Static/javascript/load-components.js"></script> 
     <script src="/Persona-Doma-Rework-Static/javascript/sticky-header.js"></script>
-    <script src="/Persona-Doma-Rework-Static/javascript/current-page.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-desktop.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/current-page-mobile.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/fetch-reviews.js"></script>
+    <script src="/Persona-Doma-Rework-Static/javascript/slideout.js"></script>
 
   </body>
 

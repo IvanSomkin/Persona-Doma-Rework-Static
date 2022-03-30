@@ -1,6 +1,6 @@
 /* Function by Chris Houghton */
 var waitForHeader = function(callback) {
-  if (document.getElementsByTagName("header").length != 0) {
+  if (document.getElementById("header-items-desktop") != null) {
     callback();
   } else {
     setTimeout(function() {
@@ -10,14 +10,15 @@ var waitForHeader = function(callback) {
 };
 
 waitForHeader(function() {
-  var header = document.getElementsByTagName("header")[0];
-  var items = header.getElementsByClassName("header__item");
+  var header_desktop = document.getElementById("header-items-desktop");
 
   page = location.pathname;
 
+  items = header_desktop.getElementsByClassName("header-item")
+
   for (var i = 0; i < items.length; i++) {
     if(items[i].getAttribute("href") == page) {
-      items[i].className += " header__item_current";
+      items[i].className += " header-item-current";
       break;
     }
   }
